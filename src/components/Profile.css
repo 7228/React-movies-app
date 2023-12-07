@@ -1,0 +1,14 @@
+.email {
+    color: white;
+    margin-top: 200px;
+}
+
+.favorite-movies {
+    padding-top: 200px;
+    display: flex;
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    column-gap: 100px;
+}

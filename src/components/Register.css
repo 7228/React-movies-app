@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    background-color: black;
+    margin:0;
+}
+
+.title {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.first-letter {
+    color: orange;
+}
+
+.register-fieldset {
+    width: 350px;
+    margin: auto;
+    margin-top:150px;
+    border-radius: 15px;
+}
+
+
+.register-title {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    margin-top:50px;
+    justify-content: space-around;
+}
+
+.register-input {
+    background-color: white;
+    border:0.5px solid black;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.register-submit {
+    background-color: orange;
+    width: 110px;
+    height: 40px;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+
+.submit-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: orange;
+    font-weight: 800;
+}
+
+.form-label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 21px;
+}
+
+.login-label {
+    color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}

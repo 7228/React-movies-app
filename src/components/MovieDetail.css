@@ -1,0 +1,182 @@
+.movie-details {
+    margin-top: 200px;
+    margin-left: 300px;
+    display: flex;
+    width: 75%;
+}
+
+.movie-information {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    margin-left: 150px;
+    row-gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-vote-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.movie-detail-poster {
+    width: 470px;
+    height: 700px;
+}
+
+.movie-overview {
+    color: white;
+    font-family:cursive;
+    display: inline;
+}
+
+.flex-info {
+    width: 800px;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 2px solid gray;
+}
+
+.flex-info:last-of-type {
+    margin-bottom: 80px;
+}
+
+.flex-info > h2 {
+    color: inherit;
+}
+
+.movie-lang {
+    text-transform: uppercase;
+}
+
+.right-side {
+    background-color: rgb(224, 176, 42);
+    width:fit-content;
+    margin-bottom: 2px;
+}
+
+.right-side > h2 {
+    background-color: inherit;
+    color: black;
+    padding: 5px;
+}
+
+.add {
+    background-color: rgb(245, 167, 24);
+    width: fit-content;
+    height: 43px;
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+    color:black;
+    font-weight: 600;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.added {
+    background-color: green;
+    font-weight:800;
+    height: 43px;
+    width: 120px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 15px;
+}
+
+.mark {
+    font-size:20px;
+    background-color: green;
+}
+
+.vote-cart {
+    display:flex;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove {
+    background-color: rgb(245, 167, 24);
+    height: 43px;
+    width: 120px;
+    margin-left: 15px;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 8px;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.heart {
+    font-size: 20px;
+    background-color: rgb(245, 167, 24);
+    margin-left: 5px;
+}
+
+.extended-review {
+    display: inline;
+    color: Orange;
+}
+
+.user-review {
+    width: 50px;
+    border: 1px solid gray;
+    display: inline;
+    color: black;
+    font-weight: 700;
+    height: 25px;
+    background-color: white;
+}
+
+.max-grade {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.add-review {
+    background-color: rgb(255, 60, 0);
+    height: 43px;
+    width: 120px;
+    margin-left: 30px;
+    border-radius: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.movie-rating {
+    color: white;
+}
+
+.movie-rating-value {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    width: fit-content;
+    background-color: orange;
+    margin-left: 10px;
+    padding: 0 5px;
+}
+
+.star {
+    color: black;
+    background-color: orange;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.black-star {
+    color:orange;
+}
