@@ -2,6 +2,11 @@
     width: 350px;
 }
 
+.movie-card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .movie-info {
     background-color:rgb(224, 176, 42);
     height:60px;
