@@ -40,14 +40,12 @@ export default function Home() {
     return(
         inputLength > 0 ? 
         <div className="movie-container">
-            <HomeHeader />
             <div style={{marginTop:"200px"}}></div>
             <div className="popular-movies">
                 {searchResults}
             </div>
         </div> :
         <div className="movie-container">
-            <HomeHeader />
             <div style={{marginTop:"200px"}}></div>
             <div className="popular-movies">
                 {movies}

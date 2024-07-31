@@ -30,7 +30,6 @@ export default function Upcoming() {
     }
     return(
         <div className="movie-container">
-            <Header/>
             <div style={{marginTop:"200px"}}></div>
             <div className="upcoming-movies">
                 {upcomingMovies[0] && upcomingMovies}

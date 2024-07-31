@@ -31,7 +31,6 @@ export default function TopRated() {
 
     return(
         <div className="movie-container">
-            <Header/>
             <div style={{marginTop:"200px"}}></div>
             <div className="top-rated-movies">
                 {top[0] && top}

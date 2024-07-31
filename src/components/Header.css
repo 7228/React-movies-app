@@ -12,6 +12,9 @@
 .nav-tab:nth-of-type(1) {
     margin-left: 10px;
 }
+.navbar-hidden {
+    display: none;
+}
 
 .nav-tab {
     background-color:#333333;
@@ -27,6 +30,9 @@
 .nav-tab:hover {
     background-color: black;
     color: white;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
 }
 
 .auth {
@@ -38,6 +44,23 @@
 .nav-link {
     background-color: #333333;
     text-decoration: none;
+}
+
+.nav-link-visible {
+    background-color: #333333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-tab-visible {
+    background-color:#333333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height:80px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -61,9 +84,67 @@
     color: orange;
 }
 
-.search-bar {
-    width: 350px;
-    height:35px;
-    margin-left: 650px;
+
+.sidebar {
+    position: absolute;
+    height:100vh;
+    width: 70vw;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    overflow: hidden;
+}
+
+.close {
+    margin-top: 250px;
+    background-color: #333333;
+}
+
+.sidebar-link {
+    text-decoration: none;
     color: white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-tab {
+    background-color: #333333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-authentication {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #333333;
+}
+
+@media screen and (max-width:640px) {
+    .menu {
+        display: inline-block !important;
+        margin-left: 20px !important;
+    }
+
+    .nav-icon {
+        display: none !important;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-tab {
+        display: none !important;
+    }
+
+
+    .sidebar {
+        height: 100vh;
+    }
 }
