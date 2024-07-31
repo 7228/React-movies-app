@@ -9,6 +9,23 @@ header {
     z-index:1;
 }
 
+.navbar-hidden {
+    display: none;
+}
+
+.menu-icon-container {
+    background-color: #333333;
+}
+
+.menu {
+    display: none;
+    margin-left: 20px;
+    cursor: pointer;
+    position: static;
+    background-color: #333333;
+
+}
+
 .nav-tab:nth-of-type(1) {
     margin-left: 10px;
 }
@@ -64,6 +81,74 @@ header {
 .search-bar {
     width: 350px;
     height:35px;
-    margin-left: 10px;
+    margin-left: 500px;
     color: white;
+}
+
+.sidebar {
+    position: absolute;
+    height:100vh;
+    width: 70vw;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    overflow: hidden;
+}
+
+.close {
+    margin-top: 250px;
+    background-color: #333333;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-tab {
+    background-color: #333333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-authentication {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: #333333;
+}
+
+@media screen and (max-width:640px) {
+    .menu {
+        display: inline-block !important;
+        margin-left: 20px !important;
+    }
+
+    .nav-icon {
+        display: none !important;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .nav-tab {
+        display: none !important;
+    }
+
+    .search-bar {
+        width: 270px;
+        margin-left: 30px;
+    }
+
+    .sidebar {
+        height: 100vh;
+    }
 }

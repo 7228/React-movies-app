@@ -59,7 +59,6 @@ export default function Profile() {
 
     return(
         <div className="profile">
-            <Header />
             <div className="favorite-movies">
                 {movies[0] && movies}
             </div>

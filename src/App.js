@@ -11,6 +11,9 @@ import Upcoming from "./components/Upcoming";
 import Profile from "./components/Profile";
 import MovieDetail from "./components/MovieDetail";
 import Testing from "./components/Testing";
+import { useLocation } from "react-router-dom";
+import Header from "./components/Header";
+import HomeHeader from "./components/HomeHeader";
 
 
 export default function App() {
@@ -21,6 +24,7 @@ export default function App() {
     const [search, setSearch] = useState("");
     const [results, setResults] = useState([]);
     const [inputLength, setInputLength] = useState(0);
+    const [showNavbar, setShowNavbar] = useState(true);
 
     
     const api = `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}`
@@ -36,7 +40,8 @@ export default function App() {
 
     },[])
 
-    
+    const location = useLocation();
+
 
     return(
         <div>
@@ -49,8 +54,10 @@ export default function App() {
                         search, setSearch,
                         results, setResults,
                         inputLength, setInputLength,
+                        showNavbar
                     }
                     }>
+                {location.pathname === "/home" ? <HomeHeader />  : <Header />}
                 <Routes>
                     <Route path="/" element={<Register />}></Route>
                     <Route path="/login" element={<Login />}></Route>

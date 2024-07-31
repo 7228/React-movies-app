@@ -132,7 +132,6 @@ export default function MovieDetail() {
 
     return(
         <div className="movie-detail-container">
-            <Header />
             <div className="movie-details">
                 <img src={`https://image.tmdb.org/t/p/original/${movie && movie.poster_path}`} className="movie-detail-poster"></img>
                 <div className="movie-information">
