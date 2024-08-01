@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import { useContext } from "react";
 import AppContext from "../AppContext";
-import HomeHeader from "./HomeHeader";
 import MovieCard from "./MovieCard";
 import { Link } from "react-router-dom";
 

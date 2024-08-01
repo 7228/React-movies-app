@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import AppContext from "../AppContext";
-import Header from "./Header";
 import MovieCard from "./MovieCard";
 import "./Profile.css"
 import { Link } from "react-router-dom";

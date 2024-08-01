@@ -1,4 +1,4 @@
-.header {
+header {
     width: 100%;
     background-color:#333333;
     height: 80px;
@@ -9,11 +9,25 @@
     z-index:1;
 }
 
-.nav-tab:nth-of-type(1) {
-    margin-left: 10px;
-}
 .navbar-hidden {
     display: none;
+}
+
+.menu-icon-container {
+    background-color: #333333;
+}
+
+.menu {
+    display: none;
+    margin-left: 20px;
+    cursor: pointer;
+    position: static;
+    background-color: #333333;
+
+}
+
+.nav-tab:nth-of-type(1) {
+    margin-left: 10px;
 }
 
 .nav-tab {
@@ -30,42 +44,17 @@
 .nav-tab:hover {
     background-color: black;
     color: white;
-    transform: scale(1.1);
-    transition: 1s;
-    cursor: pointer;
 }
 
-.auth {
+.authentication-home{
     background-color: #333333;
     display: flex;
-    margin-left: 900px;
+    margin-left: 200px;
 }
 
 .nav-link {
     background-color: #333333;
     text-decoration: none;
-}
-
-.nav-link-visible {
-    background-color: #333333;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.nav-tab-visible {
-    background-color:#333333;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    height:80px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.user {
-    margin-left: 600px;
 }
 
 .nav-icon {
@@ -84,6 +73,12 @@
     color: orange;
 }
 
+.search-bar {
+    width: 350px;
+    height:35px;
+    margin-left: 300px;
+    color: white;
+}
 
 .sidebar {
     position: absolute;
@@ -143,6 +138,11 @@
         display: none !important;
     }
 
+    .search-bar {
+        width: 260px;
+        margin-left: 40px;
+        border-radius: 15px;
+    }
 
     .sidebar {
         height: 100vh;

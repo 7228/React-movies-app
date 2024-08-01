@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
-import Header from "./Header";
 import "./TopRated.css"
 import { Link } from "react-router-dom";
 

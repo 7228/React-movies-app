@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import "./MovieDetail.css"
 import { useParams } from "react-router-dom"
 import { useState } from "react";
-import Header from "./Header";
 import { useContext } from "react";
 import AppContext from "../AppContext";
 import { deleteDoc, addDoc, collection, getDocs, doc } from "firebase/firestore";
