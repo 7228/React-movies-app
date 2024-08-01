@@ -1,4 +1,4 @@
-header {
+.header {
     width: 100%;
     background-color:#333333;
     height: 80px;
@@ -9,25 +9,11 @@ header {
     z-index:1;
 }
 
-.navbar-hidden {
-    display: none;
-}
-
-.menu-icon-container {
-    background-color: #333333;
-}
-
-.menu {
-    display: none;
-    margin-left: 20px;
-    cursor: pointer;
-    position: static;
-    background-color: #333333;
-
-}
-
 .nav-tab:nth-of-type(1) {
     margin-left: 10px;
+}
+.navbar-hidden {
+    display: none;
 }
 
 .nav-tab {
@@ -44,12 +30,15 @@ header {
 .nav-tab:hover {
     background-color: black;
     color: white;
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
 }
 
-.authentication {
+.auth {
     background-color: #333333;
     display: flex;
-    margin-left: 30px;
+    margin-left: 900px;
 }
 
 .nav-link {
@@ -57,9 +46,26 @@ header {
     text-decoration: none;
 }
 
+.nav-link-visible {
+    background-color: #333333;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-tab-visible {
+    background-color:#333333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height:80px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .user {
-    margin-left: 1100px;
+    margin-left: 600px;
 }
 
 .nav-icon {
@@ -78,12 +84,6 @@ header {
     color: orange;
 }
 
-.search-bar {
-    width: 350px;
-    height:35px;
-    margin-left: 500px;
-    color: white;
-}
 
 .sidebar {
     position: absolute;
@@ -118,11 +118,21 @@ header {
     cursor: pointer;
 }
 
+#profile-tab {
+    margin-left: 5px;
+}
+
 .sidebar-authentication {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     background-color: #333333;
+}
+
+.authentication {
+    background-color: #333333;
+    display: flex;
+    margin-left: 800px;
 }
 
 @media screen and (max-width:640px) {
@@ -141,11 +151,6 @@ header {
 
     .nav-tab {
         display: none !important;
-    }
-
-    .search-bar {
-        width: 270px;
-        margin-left: 30px;
     }
 
     .sidebar {

@@ -12,8 +12,8 @@ import Profile from "./components/Profile";
 import MovieDetail from "./components/MovieDetail";
 import Testing from "./components/Testing";
 import { useLocation } from "react-router-dom";
-import Header from "./components/Header";
-import HomeHeader from "./components/HomeHeader";
+import Navbar from "./components/Navbar";
+import HomeNavbar from "./components/HomeNavbar";
 
 
 export default function App() {
@@ -57,7 +57,7 @@ export default function App() {
                         showNavbar
                     }
                     }>
-                {location.pathname === "/home" ? <HomeHeader />  : <Header />}
+                {location.pathname === "/home" ? <HomeNavbar />  : <Navbar />}
                 <Routes>
                     <Route path="/" element={<Register />}></Route>
                     <Route path="/login" element={<Login />}></Route>
