@@ -35,7 +35,7 @@ export default function HomeHeader() {
 
     return(
         <div>
-            <div className={location.pathname !== "/login" && location.pathname !== "/" ? "header" : "navbar-hidden"}>
+            <div className={location.pathname !== "/login" && location.pathname !== "/" ? "navbar" : "navbar-hidden"}>
                 <h3 className="nav-icon"><span className="nav-icon-first-letter">M</span>ovies</h3>
                 <div className="menu-icon-container"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF" className="menu" onClick={() => setSidebar(true)}><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
                 {sidebar && <div className="sidebar">
